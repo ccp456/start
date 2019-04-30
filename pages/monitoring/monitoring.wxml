@@ -1,2 +1,12 @@
 <!--pages/monitoring/monitoring.wxml-->
-<text>pages/monitoring/monitoring.wxml</text>
+<view class="container">
+  <view class='nav' bindtap='click'>
+    <text class='nav-title'>{{pic}}</text>
+    <text class='nav-icon'>X</text>
+  </view>
+  <view class="nav-pop {{listopen ? 'liston' : 'listoff'}}">
+    <view class='nav-pop-item' bindtap='selectpic'>柱状图</view>
+    <view class='nav-pop-item' bindtap='selectpic'>折现图</view>
+    <view class='nav-pop-item' bindtap='selectpic'>饼图</view>
+  </view>
+</view>

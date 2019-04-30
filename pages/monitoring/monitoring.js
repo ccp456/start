@@ -1,13 +1,28 @@
 // pages/monitoring/monitoring.js
 Page({
-
+  
   /**
    * 页面的初始数据
    */
   data: {
-
+    listopen: false,
+    pic: '扇形图'
   },
-
+  click: function (e) {
+    if (this.data.listopen) {
+      this.setData({
+        listopen: false
+      })
+    } else {
+      this.setData({
+        listopen: true
+      })
+    }
+  },
+  selectpic: function (e) {
+    console.log(e)
+  },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
