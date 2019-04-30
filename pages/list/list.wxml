@@ -1,0 +1,21 @@
+<view class='fixt bg-g panel-between item-center'>
+  <view class='panel-start item-center'>
+    <image src='/img/search2.png' class='icon-30'></image>
+    <input class='fo-28 ma-l30 fo-w' style='width:600rpx' auto-focus='true' placeholder-class='fo-w' placeholder='输入关键字搜索' bindinput='searchInput'></input>
+  </view>
+</view>
+
+<view>
+    <modal title="新增黑名单" cancel-text="取消" confirm-text="确定" hidden="{{mHidden}}" bindconfirm="changeModel" bindcancel="modelCancel">在此处输入目标IP
+    </modal>
+    <button type='default' bindtap='btnTap'> 新增黑名单 </button>
+</view>
+
+    <scroll-view scroll-y="{{isScroll}}" style='height:{{windowHeight}}px'>
+    <block wx:key="item" wx:for="{{data}}">
+    <view data-index='{{index}}' class="order-item" bindtouchstart="drawStart" bindtouchmove="drawMove" bindtouchend="drawEnd" style="right:{{item.right}}rpx">
+        <view class="content">{{item.content}}</view>
+        <view class="remove" bindtap="delItem">删除 </view>
+    </view>
+    </block>
+</scroll-view>

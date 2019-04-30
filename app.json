@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/device/device",
+    "pages/list/list",
+    "pages/look/look",
+    "pages/monitoring/monitoring"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "监控小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#6887e1",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/device/device",
+        "text": "设备管理",
+        "iconPath": "img/t1.png",
+        "selectedIconPath": "img/t2.png"
+      },
+      {
+        "pagePath": "pages/monitoring/monitoring",
+        "text": "流量查看",
+        "iconPath": "img/t7.png",
+        "selectedIconPath": "img/t8.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "黑名单",
+        "iconPath": "img/t5.png",
+        "selectedIconPath": "img/t6.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

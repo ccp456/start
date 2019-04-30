@@ -1,0 +1,21 @@
+
+<!-- <view> -->
+<view class="container">
+  <view class="wechatapp">
+    <!-- <image class="header" src="/images/wechatapp.png"></image> -->
+    <view class="header">
+      <open-data class="" type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <view class='pa-30'>
+    <view class='panels ra-20'>
+      <button class="login-btn ma-t30" lang="zh_CN" bindtap='jumppage'>设备管理</button>
+      <button class="login-btn2 ma-t30" lang="zh_CN" bindtap='jumpnew'>流量查看</button>
+      <button class="login-btn3 ma-t30" lang="zh_CN" bindtap='authorLogin'>黑名单</button>
+    </view>
+    <view class="fo-26 ma-t30 fo-w text-center " style='margin-top:100rpx'>欢迎使用设备管理小程序</view>
+  </view>
+  
+  
+</view>
+<!-- </view> -->
